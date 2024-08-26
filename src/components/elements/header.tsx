@@ -2,7 +2,6 @@ import { motion, useMotionValueEvent, useScroll } from 'framer-motion';
 import { useRef, useState } from 'react';
 import Logo from './logo';
 import DesktopNav from './desktop-nav';
-// import MobileNav from './mobile-nav';
 import { Button } from '../ui/button';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
 
@@ -35,7 +34,7 @@ const Header = () => {
         <Logo className='w-40' />
 
         <DesktopNav />
-        {/* <MobileNav /> */}
+        {/* TODO: Mobile nav */}
 
         <div className="md:flex hidden items-center gap-4">
             <Button
@@ -43,7 +42,7 @@ const Header = () => {
                 Icon={ArrowRightIcon}
                 iconPlacement="right"
             >
-                Donate
+                CTA
             </Button>
         </div>
     </motion.header>
