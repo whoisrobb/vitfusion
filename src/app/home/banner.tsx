@@ -5,7 +5,7 @@ import { Button } from "../../components/ui/button"
 import { cn } from "../../lib/utils"
 import { Badge } from "../../components/ui/badge"
 
-const Home = () => {
+const Banner = () => {
   return (
     <div className="relative grid h-[calc(100vh-5rem)] w-full place-items-center overflow-hidden rounded-lg">
         <DotPattern
@@ -48,4 +48,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Banner
