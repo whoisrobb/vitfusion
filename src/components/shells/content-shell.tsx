@@ -38,7 +38,7 @@ const ContentShell = ({ title, subtitle, children, className }: ContentShellProp
         className={cn('py-12', className)}
     >
         <div className="text-center w-full">            
-            <div className="flex justify-center space-x-1 font-grotesk font-bold uppercase text-5xl">
+            <div className="flex justify-center font-grotesk font-bold uppercase text-5xl">
                 <AnimatePresence>
                     {title.split("").map((char, i) => (
                         <motion.h1
