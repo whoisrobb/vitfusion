@@ -78,11 +78,22 @@ module.exports = {
           from: { backgroundPosition: '200% 0' },
           to: { backgroundPosition: '-200% 0' },
         },
+        "orbit": {
+          from: {
+            transform:
+              "rotate(0deg) translateY(calc(var(--radius) * 1px)) rotate(0deg)",
+          },
+          to: {
+            transform:
+              "rotate(360deg) translateY(calc(var(--radius) * 1px)) rotate(-360deg)",
+          },
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "shine": "shine 8s ease-in-out infinite",
+        "orbit": "orbit calc(var(--duration)*1s) linear infinite",
       },
     },
   },
