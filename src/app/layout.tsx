@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom"
 import Header from "../components/elements/header"
 import SiteShell from "../components/shells/site-shell"
+import Footer from "@/components/elements/footer"
 
 const Layout = () => {
   return (
@@ -12,6 +13,8 @@ const Layout = () => {
         >
             <Outlet />
         </SiteShell>
+
+        <Footer />
     </div>
   )
 }
