@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 import { buttonVariants } from "../ui/button";
 import EmailForm from "./email-form";
 import { AccordionContent, AccordionTrigger, Accordion, AccordionItem } from "../ui/accordion";
-// import { ModeToggle } from "../themes/mode-toggle";
 import YouTubeIcon from "@/components/icons/youtube";
 import InstagramIcon from "@/components/icons/instagram";
 import FacebookIcon from "@/components/icons/facebook";
 import { cn } from "@/lib/utils";
+import { ModeToggle } from "../theme/mode-toggle";
 
 
 const Footer = () => {
@@ -108,7 +108,7 @@ const Footer = () => {
                 <div className="md:space-y-4 space-y-2">
                 <h1 className="text-4xl font-grotesk">You have feedback?</h1>
                     <EmailForm />
-                    {/* <ModeToggle /> */}
+                    <ModeToggle />
                 </div>
             </div>
         </SiteShell>
