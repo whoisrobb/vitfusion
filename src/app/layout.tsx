@@ -4,7 +4,7 @@ import SiteShell from "../components/shells/site-shell"
 
 const Layout = () => {
   return (
-    <div>
+    <div className="font-sans">
         <Header />
 
         <SiteShell
