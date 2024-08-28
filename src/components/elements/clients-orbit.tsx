@@ -9,7 +9,7 @@ export function ClientsOrbit() {
 
       {/* Inner Circles */}
       <OrbitingCircles
-        className="size-[30px] border-none bg-transparent"
+        className="size-[60px] border-none bg-transparent"
         duration={30}
         delay={20}
         radius={80}
@@ -17,7 +17,7 @@ export function ClientsOrbit() {
         <Icons.image1 />
       </OrbitingCircles>
       <OrbitingCircles
-        className="size-[30px] border-none bg-transparent"
+        className="size-[60px] border-none bg-transparent"
         duration={30}
         delay={10}
         radius={80}
@@ -27,7 +27,7 @@ export function ClientsOrbit() {
 
       {/* Outer Circles (reverse) */}
       <OrbitingCircles
-        className="size-[50px] border-none bg-transparent"
+        className="size-[90px] border-none bg-transparent"
         radius={190}
         duration={25}
         reverse
@@ -35,7 +35,7 @@ export function ClientsOrbit() {
         <Icons.image3 />
       </OrbitingCircles>
       <OrbitingCircles
-        className="size-[50px] border-none bg-transparent"
+        className="size-[60px] border-none bg-transparent"
         radius={190}
         duration={25}
         delay={20}
@@ -46,7 +46,7 @@ export function ClientsOrbit() {
 
       {/* Inner Circles */}
       <OrbitingCircles
-        className="size-[30px] border-none bg-transparent"
+        className="size-[60px] border-none bg-transparent"
         duration={20}
         delay={20}
         radius={300}
@@ -54,7 +54,7 @@ export function ClientsOrbit() {
         <Icons.image5 />
       </OrbitingCircles>
       <OrbitingCircles
-        className="size-[30px] border-none bg-transparent"
+        className="size-[60px] border-none bg-transparent"
         duration={20}
         delay={10}
         radius={300}
@@ -70,18 +70,18 @@ const Icons = {
     <img src="/images/UGA-logo.png" alt="Client 1" className="w-full" />
   ),
   image2: () => (
-    <img src="/images/The-Queen-1536x1536.png" alt="Client 2" className="w-full" />
+    <img src="/images/Atlanta-Housing-Authority-logo.png" alt="Client 2" className="w-full" />
   ),
   image3: () => (
-    <img src="/images/The-Integral-Group.png" alt="Client 3" className="w-48" />
+    <img src="/images/The-Integral-Group.png" alt="Client 3" className="w-full" />
   ),
   image4: () => (
-    <img src="/images/georgia-tech-logo.png" alt="Client 4" className="w-24" />
+    <img src="/images/georgia-tech-logo.png" alt="Client 4" className="w-full" />
   ),
   image5: () => (
-    <img src="/images/Georgia-Power-logo-color.png" alt="Client 4" className="w-24" />
+    <img src="/images/Georgia-Power-logo-color.png" alt="Client 5" className="w-full" />
   ),
   image6: () => (
-    <img src="/images/Atlanta-Housing-Authority-logo.png" alt="Client 4" className="w-24" />
+    <img src="/images/The-Queen-1536x1536.png" alt="Client 6" className="w-full" />
   ),
 };
