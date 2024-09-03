@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { buttonVariants } from "../ui/button";
 import { cn } from "../../lib/utils";
-import { NavMenu } from "./nav-menu";
 import FlipLink from "../animations/flip-link";
 
 export const pages = [
