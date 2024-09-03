@@ -9,6 +9,7 @@ import {
 //   navigationMenuTriggerStyle,
 } from "../ui/navigation-menu"
 import { cn } from "../../lib/utils";
+import FlipLink from "../animations/flip-link";
 
 const components: { title: string; href: string; description: string }[] = [
     {
@@ -61,7 +62,9 @@ export function NavMenu() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Services</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="hover:bg-transparent">
+            <FlipLink href="#">Services</FlipLink>
+          </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (

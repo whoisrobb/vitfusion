@@ -4,9 +4,11 @@ import Logo from './logo';
 import DesktopNav from './desktop-nav';
 import { Button } from '../ui/button';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
+import MenuToggle from './menu-toggle/menu-toggle';
 
 const Header = () => {
     const [hidden, setHidden] = useState(false);
+    const [open, setOpen] = useState(false);
     const lastYRef = useRef(0);
 
     const { scrollY } = useScroll();
@@ -41,9 +43,12 @@ const Header = () => {
                 variant="expandIcon"
                 Icon={ArrowRightIcon}
                 iconPlacement="right"
+                className='border bg-transparent hover:bg-transparent text-muted-foreground hover:text-primary hover:border-primary'
             >
-                CTA
+                Contact
             </Button>
+
+            <MenuToggle open={open} setOpen={setOpen} />
         </div>
     </motion.header>
   )

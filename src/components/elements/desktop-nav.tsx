@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { buttonVariants } from "../ui/button";
 import { cn } from "../../lib/utils";
 import { NavMenu } from "./nav-menu";
+import FlipLink from "../animations/flip-link";
 
 export const pages = [
     {
@@ -19,19 +20,32 @@ const DesktopNav = () => {
     <div className="md:flex items-center hidden">
         <Link
             to={'/about'}
-            className={cn("font-sans capitalize font-bold", buttonVariants({ variant: "linkHover2" }))}
+            className={cn("font-sans capitalize font-bold text-muted-foreground hover:text-primary", buttonVariants({ variant: "linkHover2" }))}
         >
-            About Us
+            <FlipLink href="/about">About</FlipLink>
         </Link>
 
-        <NavMenu />
+        {/* <NavMenu /> */}
+        <Link
+            to={'/about'}
+            className={cn("font-sans capitalize font-bold text-muted-foreground hover:text-primary", buttonVariants({ variant: "linkHover2" }))}
+        >
+            <FlipLink href="/about">services</FlipLink>
+        </Link>
         
         <Link
-            to={'/contact'}
-            className={cn("font-sans capitalize font-bold", buttonVariants({ variant: "linkHover2" }))}
+            to={'/about'}
+            className={cn("font-sans capitalize font-bold text-muted-foreground hover:text-primary", buttonVariants({ variant: "linkHover2" }))}
         >
-            Contact Us
+            <FlipLink href="/about">Partners</FlipLink>
         </Link>
+        
+        {/* <Link
+            to={'/contact'}
+            className={cn("font-sans capitalize font-bold text-muted-foreground hover:text-primary", buttonVariants({ variant: "linkHover2" }))}
+        >
+            <FlipLink href="/contact">Contact</FlipLink>
+        </Link> */}
     </div>
   )
 }
