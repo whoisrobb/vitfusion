@@ -6,15 +6,15 @@ import Footer from "@/components/elements/footer"
 const Layout = () => {
   return (
     <div className="font-sans">
-        <Header />
+      <Header />
 
-        <SiteShell
-            className="py-20"
-        >
-            <Outlet />
-        </SiteShell>
+      <SiteShell
+        className="py-20"
+      >
+        <Outlet />
+      </SiteShell>
 
-        <Footer />
+      <Footer />
     </div>
   )
 }
