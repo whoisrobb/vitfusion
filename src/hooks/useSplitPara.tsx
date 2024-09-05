@@ -25,7 +25,7 @@ const useSplitPara = (text: string, ref: MutableRefObject<null>, delay?: number)
             custom={index}
             animate={isInView ? 'open' : 'closed'}
             className="inline-block"
-            transition={{ delay: delay ? delay : 0 }}
+            transition={{ delay: delay ? delay : 0.4 }}
         >
             {word}
         </motion.span>
