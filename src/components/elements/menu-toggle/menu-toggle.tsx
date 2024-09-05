@@ -1,9 +1,10 @@
-import { Dispatch, SetStateAction } from 'react';
+// import { Dispatch, SetStateAction } from 'react';
 import './menu.css';
+// import { useMenuStore } from '@/store/menu-store';
 
 type MenuToggleProps = {
   open: boolean;
-  setOpen: Dispatch<SetStateAction<boolean>>;
+  setOpen: () => void;
 }
 
 const MenuToggle = ({ open, setOpen }: MenuToggleProps) => {
@@ -12,7 +13,7 @@ const MenuToggle = ({ open, setOpen }: MenuToggleProps) => {
     <div
       id="menu-toggle"
       className={open ? 'open' : ''}
-      onClick={() => setOpen(prev => !prev)}
+      onClick={setOpen}
     >
       <div id="hamburger">
         <span></span>

@@ -5,10 +5,12 @@ import DesktopNav from './desktop-nav';
 import { Button } from '../ui/button';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
 import MenuToggle from './menu-toggle/menu-toggle';
+import { useMenuStore } from '@/store/menu-open-store';
 
 const Header = () => {
+    const { menuOpen, toggleMenu } = useMenuStore((state) => state);
+
     const [hidden, setHidden] = useState(false);
-    const [open, setOpen] = useState(false);
     const lastYRef = useRef(0);
 
     const { scrollY } = useScroll();
@@ -48,7 +50,7 @@ const Header = () => {
                 Contact
             </Button>
 
-            <MenuToggle open={open} setOpen={setOpen} />
+            <MenuToggle open={menuOpen} setOpen={toggleMenu} />
         </div>
     </motion.header>
   )
