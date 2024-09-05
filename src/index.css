@@ -75,7 +75,7 @@
   
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: grey; 
+  background: hsl(202 100% 50%); 
   border-radius: 10px;
 }
 
