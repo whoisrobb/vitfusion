@@ -26,14 +26,14 @@ const DesktopNav = () => {
 
         {/* <NavMenu /> */}
         <Link
-            to={'/about'}
+            to={'#'}
             className={cn("font-sans capitalize font-bold text-muted-foreground hover:text-primary", buttonVariants({ variant: "linkHover2" }))}
         >
             <FlipLink href="/about">services</FlipLink>
         </Link>
         
         <Link
-            to={'/about'}
+            to={'/partners'}
             className={cn("font-sans capitalize font-bold text-muted-foreground hover:text-primary", buttonVariants({ variant: "linkHover2" }))}
         >
             <FlipLink href="/about">Partners</FlipLink>
