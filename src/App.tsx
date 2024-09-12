@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import Lenis from 'lenis';
 import 'lenis/dist/lenis.css';
 import MenuPage from "./components/elements/menu-page";
+import About from "./app/about";
 
 const App = () => {
 
@@ -25,6 +26,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
         </Route>
       </Routes>
     </div>
