@@ -9,7 +9,7 @@ const Layout = () => {
       <Header />
 
       <SiteShell
-        className="py-20"
+        className="pt-20"
       >
         <Outlet />
       </SiteShell>
