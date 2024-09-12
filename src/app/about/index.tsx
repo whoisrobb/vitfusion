@@ -1,4 +1,7 @@
+import Approach from "./_components/approach"
 import Banner from "./_components/banner"
+import Mission from "./_components/mission"
+import Vision from "./_components/vision"
 
 const About = () => {
   return (
@@ -12,6 +15,11 @@ const About = () => {
     </div>
     
     <Banner />
+    <div className="bg-background space-y-12">
+      <Mission />
+      <Vision />
+      <Approach />
+    </div>
   </div>
   )
 }
