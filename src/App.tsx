@@ -6,6 +6,7 @@ import Lenis from 'lenis';
 import 'lenis/dist/lenis.css';
 import MenuPage from "./components/elements/menu-page";
 import About from "./app/about";
+import Partners from "./app/partners";
 
 const App = () => {
 
@@ -27,6 +28,7 @@ const App = () => {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
+          <Route path="partners" element={<Partners />} />
         </Route>
       </Routes>
     </div>
