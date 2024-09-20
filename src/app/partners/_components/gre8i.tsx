@@ -14,7 +14,7 @@ const Gre8i = () => {
         <AnimSeparator />
 
         <div className="grid md:grid-cols-3 grid-cols-1 py-8">
-            <h1 className="col-span-2 capitalize md:text-4xl text-2xl font-bold">Great Intelligence</h1>
+            <h1 className="col-span-2 capitalize md:text-4xl text-2xl font-bold">Gre8 Intelligence</h1>
             <div className="space-y-4">
                 <p
                     className="flex flex-wrap gap-x-1"
