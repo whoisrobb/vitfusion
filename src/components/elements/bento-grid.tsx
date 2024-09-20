@@ -54,7 +54,7 @@ const features = [
     href: "/services/venue-videos",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-1",
-    background: <img className="h-full w-full object-cover opacity-40 hover:opacity-60" src="https://utfs.io/f/ba0Al6LG58m3GpMtQt5h3C8cxLJsoE70WMdplbTQYVNvBrfH" alt="Venue Videos" />
+    background: <img className="h-full w-full object-cover opacity-40 hover:opacity-60" src="https://utfs.io/f/ba0Al6LG58m3tJMpYpUpBrzL3ePDjIARubJOHUwvKkWqM6hn" alt="Venue Videos" />
   },
 ];
 
