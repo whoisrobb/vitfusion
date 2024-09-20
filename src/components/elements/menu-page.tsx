@@ -92,6 +92,7 @@ const MenuPage = () => {
                                     initial="initial"
                                     animate="animate"
                                     exit="exit"
+                                    onClick={() => toggleMenu()}
                                 >
                                     <Link
                                         to={link.href}
