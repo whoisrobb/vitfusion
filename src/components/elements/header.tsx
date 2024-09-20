@@ -41,15 +41,6 @@ const Header = () => {
         {/* TODO: Mobile nav */}
 
         <div className="md:flex hidden items-center gap-4">
-            <Button
-                variant="expandIcon"
-                Icon={ArrowRightIcon}
-                iconPlacement="right"
-                className='border bg-transparent hover:bg-transparent text-muted-foreground hover:text-primary hover:border-primary'
-            >
-                Contact
-            </Button>
-
             <MenuToggle open={menuOpen} setOpen={toggleMenu} />
         </div>
     </motion.header>
