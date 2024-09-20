@@ -24,7 +24,7 @@ const Gre8i = () => {
                 </p>
 
                 <Link
-                    to={''}
+                    to={'https://gre8i.com'}
                     target="_blank"
                 >
                     <Button variant={"linkHover1"}>Learn more</Button>

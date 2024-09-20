@@ -24,7 +24,7 @@ const Vautomated = () => {
                 </p>
 
                 <Link
-                    to={''}
+                    to={'https://vautomated.com'}
                     target="_blank"
                 >
                     <Button variant={"linkHover1"}>Learn more</Button>
