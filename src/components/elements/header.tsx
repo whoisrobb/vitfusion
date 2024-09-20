@@ -2,8 +2,6 @@ import { motion, useMotionValueEvent, useScroll } from 'framer-motion';
 import { useRef, useState } from 'react';
 import Logo from './logo';
 import DesktopNav from './desktop-nav';
-import { Button } from '../ui/button';
-import { ArrowRightIcon } from '@radix-ui/react-icons';
 import MenuToggle from './menu-toggle/menu-toggle';
 import { useMenuStore } from '@/store/menu-open-store';
 
